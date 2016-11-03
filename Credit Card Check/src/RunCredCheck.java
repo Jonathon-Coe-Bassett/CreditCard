@@ -1,14 +1,15 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-public class Runner
+public class RunCredCheck
 	{
 
 		public static void main(String[] args) throws FileNotFoundException
 			{
-				Scanner file=new Scanner(new File("creditCardNumbers.txt"));
+				Scanner file=new Scanner(new File("creditCardNumbers2.txt"));
 				while(file.hasNext())
 					{
+						
 				long num=file.nextLong();
 				long original=num;
 				int digit, total=0;
